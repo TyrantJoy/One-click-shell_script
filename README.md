@@ -6,7 +6,7 @@
 > Before use,You should open the port you want to set or turn off the firewall.
 - How to use
 ```sh
-wget https://github.com/TyrantJoy/One-click-shell_script/blob/master/MTProxy/MTProxy.sh
+wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/MTProxy/MTProxy.sh
 chmod +x MTProxy.sh
 ./MTProxy.sh
 ```
@@ -15,7 +15,7 @@ chmod +x MTProxy.sh
 > Before use,You should open the port 80 or turn off the firewall.
 - How to use
 ```sh
-wget https://github.com/TyrantJoy/One-click-shell_script/blob/master/WordPress/WordPress.sh
+wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/WordPress/WordPress.sh
 chmod +x WordPress.sh
 ./WordPress.sh
 ```
@@ -24,7 +24,7 @@ chmod +x WordPress.sh
 > Before use,You should open the port you want to set or turn off the firewall.
 - How to use
 ```sh
-wget https://github.com/TyrantJoy/One-click-shell_script/blob/master/Brook/Brook.sh
+wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/Brook/Brook.sh
 chmod +x Brook.sh
 ./Brook.sh
 ```
