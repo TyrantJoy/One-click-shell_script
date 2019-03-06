@@ -1,5 +1,5 @@
 #!/bin/bash
-
+stty erase '^H'
 echo "请输入你要设置的端口号:"
 read port
 echo "你输入的端口号为:$port"
