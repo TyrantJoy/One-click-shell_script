@@ -10,7 +10,7 @@ function get_linux_platform_type()
         echo "invaild"
     fi
 }
-
+stty erase '^H'
 type=`get_linux_platform_type`
 echo "当前服务器平台为:$type"
 
