@@ -19,3 +19,12 @@ wget https://github.com/TyrantJoy/One-click-shell_script/blob/master/WordPress/W
 chmod +x WordPress.sh
 ./WordPress.sh
 ```
+## Brook
+- Note
+> Before use,You should open the port you want to set or turn off the firewall.
+- How to use
+```sh
+wget https://github.com/TyrantJoy/One-click-shell_script/blob/master/Brook/Brook.sh
+chmod +x Brook.sh
+./Brook.sh
+```
