@@ -35,6 +35,6 @@ systemctl enable brook
 systemctl start brook
 
 echo "Brook 服务器一栏填以下信息:"
-echo "$ip:$port"
+echo -e "\e[1;31m $ip:$port \e[0m"
 echo "Brook 密码一栏填以下信息:"
-echo "$password"
+echo -e "\e[1;31m $password \e[0m"
