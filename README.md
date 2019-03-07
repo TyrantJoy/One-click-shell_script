@@ -7,7 +7,7 @@
 > 2. Support: `Centos` `Ubuntu`
 > 3. You can use it to build MTProxy Service
 - How to use
-```sh
+```shell
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/MTProxy/MTProxy.sh
 chmod +x MTProxy.sh
 ./MTProxy.sh
@@ -18,7 +18,7 @@ chmod +x MTProxy.sh
 > 2. Support:  `Centos`
 > 3. You can use it to build a WordPress blog
 - How to use
-```sh
+```shell
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/WordPress/WordPress.sh
 chmod +x WordPress.sh
 ./WordPress.sh
@@ -29,7 +29,7 @@ chmod +x WordPress.sh
 > 2. Support: `Centos` `Ubuntu`
 > 3. You can use it to build Brook Service
 - How to use
-```sh
+```shell
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/Brook/Brook.sh
 chmod +x Brook.sh
 ./Brook.sh
@@ -46,7 +46,7 @@ chmod +x Brook.sh
 
 - How to use
 
-```sh
+```shell
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/Vim/Vim.sh
 chmod +x Vim.sh
 ./Vim.sh
