@@ -54,5 +54,5 @@ systemctl enable MTProxy
 systemctl start MTProxy
 clear
 echo "你的专属MTProxy链接为:"
-echo "tg://proxy?server=$ip&port=$port&secret=$secret"
+echo -e "\e[1;31m tg://proxy?server=$ip&port=$port&secret=$secret \e[0m"
 
