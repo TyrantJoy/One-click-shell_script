@@ -20,6 +20,9 @@ if [ ${type} == "ubuntu" ]; then
 	yum install git cmake make gcc curl openssl-devel vim vim-common -y
 fi
 
+serverIp=`ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p' | head -n 1`
+
+
 echo "请输入你想要设置的端口号:"
 read port
 echo "您输入的端口号为:$port"
@@ -36,6 +39,12 @@ curl -s https://core.telegram.org/getProxySecret -o proxy-secret
 curl -s https://core.telegram.org/getProxyConfig -o proxy-multi.conf
 secret=`head -c 16 /dev/urandom | xxd -ps`
 
+if [ $serverIp == $ip ]
+then
+	ExecStart="$directory/mtproto-proxy -u nobody -p 8888 -H $port -S $secret --aes-pwd proxy-secret proxy-multi.conf -M 1"
+else
+	ExecStart="$directory/mtproto-proxy -u nobody -p 8888 -H $port -S $secret --nat-info $serverIp:$ip --aes-pwd proxy-secret proxy-multi.conf -M 1"
+fi
 echo "
 [Unit]
 Description=MTProxy
@@ -44,7 +53,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=$directory
-ExecStart=$directory/mtproto-proxy -u nobody -p 8888 -H $port -S $secret --aes-pwd proxy-secret proxy-multi.conf -M 1
+ExecStart=$ExecStart
 Restart=on-failure
 
 [Install]
