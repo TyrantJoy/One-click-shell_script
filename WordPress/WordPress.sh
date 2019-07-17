@@ -25,8 +25,8 @@ yum install php70w.x86_64 php70w-cli.x86_64 php70w-common.x86_64 php70w-gd.x86_6
 
 
 #下载安装wordpress
-wget https://cn.wordpress.org/wordpress-4.9.4-zh_CN.zip
-unzip wordpress-4.9.4-zh_CN.zip
+wget https://wordpress.org/latest.zip 
+unzip latest.zip
 cp -r wordpress/* /var/www/html/
 chown -Rf apache:apache /var/www/html/
 systemctl restart httpd
