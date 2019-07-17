@@ -7,12 +7,23 @@
 > 2. Support: `Centos` `Ubuntu`
 > 3. You can use it to build MTProxy Service
 - How to use
+1. if you use `Centos`
+
 ```shell
 yum install wget -y
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/MTProxy/MTProxy.sh
 chmod +x MTProxy.sh
 ./MTProxy.sh
 ```
+2. if you use `Ubuntu`
+
+```shell
+apt-get install wget -y
+wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/MTProxy/MTProxy.sh
+chmod +x MTProxy.sh
+./MTProxy.sh
+```
+
 ## WordPress
 - Note
 > 1. Before use,You should open the port 80 or turn off the firewall and the user executing the shell script must be `root`.
@@ -31,12 +42,24 @@ chmod +x WordPress.sh
 > 2. Support: `Centos` `Ubuntu`
 > 3. You can use it to build Brook Service
 - How to use
+1. if you use `Centos`
+
 ```shell
 yum install wget -y
 wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/Brook/Brook.sh
 chmod +x Brook.sh
 ./Brook.sh
 ```
+2. if you use `Ubuntu`
+
+```shell
+apt-get install wget -y
+wget https://raw.githubusercontent.com/TyrantJoy/One-click-shell_script/master/Brook/Brook.sh
+chmod +x Brook.sh
+./Brook.sh
+```
+
+
 
 ## Vim
 
